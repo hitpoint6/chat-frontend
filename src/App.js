@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Home from './pages/home';
 import Chat from './pages/chat';
 
-const socket = io.connect(`${process.env.BACKEND_URL}`);
+const socket = io.connect(`${process.env.REACT_APP_BACKEND_URL}`);
 
 function App() {
   const [username, setUsername] = useState('');

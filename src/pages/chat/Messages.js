@@ -6,7 +6,7 @@ const Messages = ({ socket, username, room }) => {
     const endOfMessagesRef = useRef(null);
 
     async function loadSavedMessages() {
-        const res = await fetch(`${process.env.BACKEND_URL}/api/messages/${room}`);
+        const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/messages/${room}`);
 
         if (!res.ok) {
             console.error("Fetch error:", res.statusText);
